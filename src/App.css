@@ -27,7 +27,14 @@
 .App-link {
   color: #61dafb;
 }
-
+.bg-dark{
+  background-color: #282c34;
+  color: wheat;
+}
+.no-decor{
+  text-transform: capitalize;
+  text-decoration: none;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
