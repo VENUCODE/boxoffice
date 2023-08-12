@@ -31,9 +31,46 @@
   background-color: #282c34;
   color: wheat;
 }
-.no-decor{
-  text-transform: capitalize;
+.button{
+  background-color: aquamarine;
+  color: black;
+  padding:10px;
+  display:block;
+  border-radius:10px;
+  text-transform: uppercase;
   text-decoration: none;
+  width: 30ch;
+  text-align: center;
+}
+.navbar{
+  display:  flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: chocolate;
+  padding:5px ;
+  margin:4px;
+
+}
+.nav-item{
+
+  text-transform: capitalize;
+  color: beige;
+  font-weight: 900;
+}
+.nav-item a{
+  background-color: #282c34;
+  color: white;
+  text-decoration: none;
+  padding:10px 20px;
+  
+}
+.title,.sub-title{
+  text-align: center;
+}
+.sub-title{
+  margin-bottom: 40px;
 }
 @keyframes App-logo-spin {
   from {
