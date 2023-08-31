@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 const SearchForm=({searchStr})=>{
   const [searchInput, setsearchInput] = useState('');
