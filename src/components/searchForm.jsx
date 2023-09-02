@@ -1,8 +1,12 @@
 import { useState,useEffect } from 'react';
-
 const SearchForm=({searchStr})=>{
   const [searchInput, setsearchInput] = useState('');
   const [searchOption, setSearchOption] = useState('shows');
+  console.log("Component rerender")
+  useEffect(()=>{
+    console.log('mounts:',searchOption)
+    return ()=>{console.log("component unmounts",searchOption)}
+  },[searchOption])
   const inputStr = e => {
     setsearchInput(e.target.value);
   };
