@@ -4,6 +4,7 @@ import useShowById from '../hooks/getShowById';
 const Show = () => {
   const { showId } = useParams();
   const [showError,showData]=useShowById(showId)
+  console.log(showData)
   if (showData) {
     return <div>Data Recieved :{showData.name}</div>;
   } 

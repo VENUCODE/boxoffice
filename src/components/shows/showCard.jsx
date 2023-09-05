@@ -14,7 +14,7 @@ const ShowCard = ({
      
       <img alt="No image" src={image?image:image_not_found} />
       <p>{summary?.split(' ').slice(0,10).join(' ').replace(/<[^>]*>/g, '')}</p>
-      <Link to={`/show/+${id}`}>Read More</Link>
+      <Link to={`/show/${id}`}>Read More</Link>
       <button>Star me</button>
     </div>
   );
