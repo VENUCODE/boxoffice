@@ -9,5 +9,5 @@ export const searchShow = showSearch => apiGet(`/search/shows?q=${showSearch}`);
 export const searchPerson = personSearch =>
   apiGet(`/search/people?q=${personSearch}`);
 export const getShowById = (showId) => {
-  return apiGet(`/shows/${showId}`);
+  return apiGet(`/shows/${showId}?embed[]=seasons&embed[]=cast`);
 };

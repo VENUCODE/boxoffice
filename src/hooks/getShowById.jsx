@@ -14,12 +14,15 @@ const useShowById = showId => {
 
   //     fetchData();
   //   }, [showId]);
-  const { data: showData, error: showError } = useQuery(['show', showId], () =>{
-    console.log(showId)
-    return getShowById(showId)
-  }
-    
+  const { data: showData, error: showError } = useQuery(
+    ['show', showId],
+    () => {
+      return getShowById(showId);
+    },{
+    refetchOnWindowFocus:false,
+    }
   );
   return [showError, showData];
 };
 export default useShowById;
+ 
