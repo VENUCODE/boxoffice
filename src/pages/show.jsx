@@ -25,13 +25,14 @@ const Show = () => {
             status={showData.status}
             premiered={showData.premiered}
             network={showData.network}
+            language={showData.language}
           />
         </div>
         <div>
           <Seasons seasons={showData._embedded.seasons} />
         </div>
         <div>
-          <Casts easons={showData._embedded.seasons} />
+          <Casts casts={showData._embedded.cast} />
         </div>
       </div>
     );
