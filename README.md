@@ -3,4 +3,4 @@
   This project involves the basics of react
 </p>
 <p><i>you can clone repository as :</i></p>
-<code>git clone https://github.com/VENUCODE/boxoffice.git</code>
+<code>git clone git@github.com:VENUCODE/boxoffice.git</code>
